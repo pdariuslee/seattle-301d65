@@ -198,10 +198,17 @@ Student.prototype.scopeArrow = () => console.log(this);
 console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
+
+
 // 1. What is "this" when joe.scope() is invoked?
-// "this" when joe.scope() is revoked refers to the current object, and since the method "scope" was used on "joe", the console log printed key value pairs related to the student joe 
+// "this" when joe.scope() is revoked refers to the Student object joe
+
 
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//  
+//  "this" when joe.scopeArrow() is invoked represents the Window object that owns the function
+
+
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// "this" is different when an arrow function is used because "this" keyword represents the object that owns the function, and not who called the method
+
+// resources: https://www.w3schools.com/js/tryit.asp?filename=tryjs_arrow_function7
